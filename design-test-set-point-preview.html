@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; Charset=windows-1251" />
+<link type="text/css" href="style.css" rel="stylesheet" />
+<link type="text/css" href="js/jquery.jscrollpane/jquery.jscrollpane.css" rel="stylesheet" />
+<script type='text/javascript' src="js/jquery-1.7.2.js"></script>
+<script type='text/javascript' src="js/jquery.jscrollpane.min.js"></script>
+<script type='text/javascript' src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type='text/javascript' src="js/scripts.js"></script>
+<script type="text/javascript">
+var api_middle, api_right;
+
+$().ready(function(){
+	$(window).load(function(){
+		resizeContentContainer();
+		$('.middle-col .scroll-block').jScrollPane();
+		$('.right-col .scroll-block').jScrollPane();	
+		api_middle = $('.middle-col .scroll-block').data('jsp');
+		api_right = $('.right-col .scroll-block').data('jsp');
+		
+	});
+	
+	$(window).resize(function(){
+		resizeContentContainer();
+		api_middle.reinitialise();
+		api_right.reinitialise();
+	})
+});
+</script>
+</head>
+<body>
+<div class='head'>
+	<a href='#'><img src='img/logo.png' alt='на главную' class='logo' /></a>
+	<span class='slogan typeface-js'>Тест по русскому языку</span><!--slogan-->
+	<div class='right'><a href='#' title='FAQ'><img src='img/question.png' alt='' /></a> <a href='#' title=''><img src='img/monitor.png' alt='' /></a> <a href='#' title='Exit'><img src='img/exit.png' alt='' /></a></div><!--right-->
+
+	<div class='back'><a href="#" class="top-save-button opacity"></a>  <a href='#' class='return'></a> <a href='#' class='return1 opacity'></a></div><!--back--> 
+</div>
+<div class="content-container">
+	<div class="right-col">	
+    	<div class="right-col-top">
+            <a href="javascript:void(0);" class="question-button"></a>
+            <ul class="type-selector">
+                <li>
+                	<a href="javascript:void(0);" class="list active"></a>
+                </li>
+                <li>
+                	<a href="javascript:void(0);" class="block"></a>
+                    <div class="popup-type-selector">
+                   		<div class="container">
+                            <div class="top-tongue"></div>
+                            Список пулов <img src="img/icon-question.png" alt="" title="" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="questions-caption">Вопросы</div>
+    	<div class="scroll-block">
+        	<div class="column-content">
+            	<ul class="question-list">
+                	<li>
+                    	<span>1.</span> Окружающая среда, в которой существуют...
+                        <div class="type">Подписи к картинкам</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>2.</span> Французские слова и выражения, которые...
+                        <div class="type">Сопоставление</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li class="active">
+                    	<span>3.</span> В каком предложении придаточную часть...
+                        <div class="type">Короткий ответ</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>4.</span> Французские слова и выражения, которые...
+                        <div class="type">Выбор ответа из вар...</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>5.</span> Окружающая среда, в которой существуют...
+                        <div class="type">Подписи к картинкам</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>6.</span> Французские слова и выражения, которые...
+                        <div class="type">Сопоставление</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>7.</span> В каком предложении придаточную часть...
+                        <div class="type">Короткий ответ</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>8.</span> Французские слова и выражения, которые...
+                        <div class="type">Выбор ответа из вар...</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>                        
+                    </li>
+                    <li>
+                    	<span>9.</span> Окружающая среда, в которой существуют...
+                        <div class="type">Подписи к картинкам</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>10.</span> Французские слова и выражения, которые...
+                        <div class="type">Сопоставление</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>11.</span> В каком предложении придаточную часть...
+                        <div class="type">Короткий ответ</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>12.</span> Французские слова и выражения, которые...
+                        <div class="type">Выбор ответа из вар...</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>13.</span> Французские слова и выражения, которые...
+                        <div class="type">Выбор ответа из вар...</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>14.</span> Окружающая среда, в которой существуют...
+                        <div class="type">Подписи к картинкам</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>15.</span> Французские слова и выражения, которые...
+                        <div class="type">Сопоставление</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>16.</span> В каком предложении придаточную часть...
+                        <div class="type">Короткий ответ</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                    <li>
+                    	<span>17.</span> Французские слова и выражения, которые...
+                        <div class="type">Выбор ответа из вар...</div>
+                        <a href="javascript:void(0);" class="delete"></a>
+                        <a href="javascript:void(0);" class="copy"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="questions-points-num">
+        	6 вопросов, 34 балла
+        </div>
+    </div>
+    <div class="middle-col without-left">
+    	<div class="scroll-block">
+        	<div class="main_cont preview">
+        		<div class="column-content">
+					<div class="general">	
+						<div class="question-block-2">
+							<div class="field-name">Вопрос</div>
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="right-answer-caption">Выберите правильный ответ</div><div class="clear"></div>
+							<div class="set-point">
+								<div class="set-point-img">
+									<img src="img/pic_9.jpg" alt=""/>
+									<div class="set-point-marker"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<a href="javascript:void(0)" class="blue_btn" title="Ответить">Ответить</a>
+							<a href="javascript:void(0)" class="white_btn" title="Вернуться в редактирование">Вернуться в редактирование</a><div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+        		</div>
+        	</div>
+			
+    	</div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+	

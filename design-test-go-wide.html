@@ -1,0 +1,1511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; Charset=windows-1251" />
+<link type="text/css" href="style.css" rel="stylesheet" />
+<link type="text/css" href="js/jquery.jscrollpane/jquery.jscrollpane.css" rel="stylesheet" />
+<script type='text/javascript' src="js/jquery-1.7.2.js"></script>
+<script type='text/javascript' src="js/jquery.jscrollpane.min.js"></script>
+<script type='text/javascript' src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type='text/javascript' src="js/scripts.js"></script>
+<script type='text/javascript' src="js/jquery-ui.min.js"></script>
+<script type='text/javascript' src="js/drag_and_drop.js"></script>
+<script type='text/javascript' src="js/taking_test.js"></script>
+<script type="text/javascript">
+
+var api_middle_content;
+$().ready(function(){
+	
+	$(window).load(function(){
+		resizeContentContainerTest();
+		var tt;
+		$('.middle-col .column-content').bind(
+				'jsp-scroll-y',
+				function(event, scrollPositionY, isAtTop, isAtBottom)
+				{
+					clearTimeout(tt);
+					$(".middle-col .column-content .jspVerticalBar").fadeIn(500);
+					tt=setTimeout(hideScroll,2000);
+				}
+			).jScrollPane();
+		api_middle_content = $('.middle-col .column-content').data('jsp');
+		api_middle_content.reinitialise();
+		//resizeContentContainerTest();
+	});
+	
+	$(window).resize(function(){
+		resizeContentContainerTest();
+		api_middle_content.reinitialise();
+	})
+});
+</script>
+</head>
+<body>
+<div class="fill-bg"></div>
+<div class="question-map">
+	<div class="question-map-cont">
+		<div class="question-map-close"></div>
+		<p class="title">Выберите вопрос</p>
+		<ul class="question-map-items">
+			<li class="active"><div>1</div></li>
+			<li><div>2</div></li>
+			<li><div>3</div></li>
+			<li><div>4</div></li>
+			<li><div>5</div></li>
+			<li class="true"><div>6</div></li>
+			<li><div>7</div></li>
+			<li class="false"><div>8</div></li>
+			<li><div>9</div></li>
+			<li class="true"><div>10</div></li>
+			<li><div>11</div></li>
+			<li class="false"><div>12</div></li>
+			<li class="true"><div>13</div></li>
+			<li><div>14</div></li>
+			<li><div>15</div></li>
+			<li><div>16</div></li>
+			<li class="false"><div>17</div></li>
+			<li class="true"><div>18</div></li>
+			<li class="false"><div>19</div></li>
+			<li class="true"><div>20</div></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div class='head'>
+	<a href='#'><img src='img/logo.png' alt='на главную' class='logo' /></a>
+	<span class='slogan typeface-js'>Тест по русскому языку</span><!--slogan-->
+
+	<div class="test-buttons"><a href="#" class="top-help-button"></a>  <a href="#" class="top-logout-button"></a></div><!--back--> 
+</div>
+<div class="content-container">
+	<div class="test-next-btn"></div>
+	<div class="test-prev-btn"></div>
+    <div class="middle-col taking-test">
+		<div class="main_cont">
+			<div class="question-counter">
+				<div class="question-counter-text"><a href="javascript:void(0)" title="Вопрос 1 из 20">Вопрос <span>1</span> из 20</a></div>
+				<div class="points">
+					<div class="points-cont">10 баллов</div>
+				</div>
+                <div class="question-status error">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                    Ответ неверный Полученно 10 из 10 баллов
+                </div>
+				<div class="clear"></div>
+			</div>
+			<div class="scroll-block">
+				<div class="column-content">
+					<div class="general">
+						<div class="question-block-2 test-question active" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop correct_pair">
+								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+								<table>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Окружающая среда</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые </div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont status-error">
+											Александр Пушкин 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Лев Толстой
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont status-ok">
+											Алексей Толстой
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Михаил Зеленский
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="6" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="right-answer-caption">Выберите правильный ответ</div><div class="clear"></div>
+							<ul class="answer-blocks-white mod_cursor">
+								<li>
+									<div class="bg status-ok">
+										<div class="radio selected"></div><div class="text">Да</div><div class="clear"></div>
+									</div>
+								</li>
+								
+								<li>
+									<div class="bg status-error">
+										<div class="radio"></div><div class="text">Нет</div><div class="clear"></div>
+									</div>
+								</li>
+							</ul>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+						</div>
+						
+						
+						<div class="question-block-2 test-question">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop">
+								<div class="right-answer-help"><div class="text">Расположите ответы в правильной последовательности</div><div class="icon"></div><div class="clear"></div></div>
+								<div class="clear"></div>
+								<table>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont status-error">
+											Окружающая среда, в которой существуют живые существа. 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont mod_padding status-ok">
+											<div class="img">
+												<img alt="" src="img/pic_1.jpg" />
+											</div>
+											Психосоматика притягивает конвергентный интеллект.
+											<div class="clear"></div>												
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Французские слова и выражения, которые проникают организмы
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+								</div>
+								
+								<div class="clear"></div>
+							</div>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+							
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="right-answer-caption">Выберите правильный ответ</div><div class="clear"></div>
+							<ul class="answer-blocks-white mod_cursor">
+								<li>
+									<div class="bg mod_padding status-error">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding status-ok">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="right-answer-caption mod_margin">Напишите ответ</div>
+							<ul class="answer-blocks-white">
+								<li><div class="bg status-ok">
+									<div class="input"><div class="l"></div><input type="text" name="" value="Окружающая среда" class="c"/><div class="r"></div><div class="clear"></div></div>
+								</div></li>
+							</ul>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="6" data-seconds="">
+							<div class="question-block-container">
+								Цитата как бы придвигает к нам прошлое, при этом стих абсурдно отталкивает резкий симулякр и передается в этом стихотворении Донна метафорическим образом циркуля.
+							</div>
+							<div class="drag_drop correct_pair">
+								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+								<table>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Окружающая среда</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые </div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											1
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											2
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											3
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											4
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						
+						<div class="question-block-2 test-question">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop">
+								<div class="right-answer-help"><div class="text">Расположите ответы в правильной последовательности</div><div class="icon"></div><div class="clear"></div></div>
+								<div class="clear"></div>
+								<table>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда, в которой существуют живые существа. 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont mod_padding">
+											<div class="img">
+												<img alt="" src="img/pic_1.jpg" />
+											</div>
+											Психосоматика притягивает конвергентный интеллект.
+											<div class="clear"></div>												
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Французские слова и выражения, которые проникают организмы
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+								</div>
+								
+								<div class="clear"></div>
+							</div>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+							
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="right-answer-caption">Выберите правильный ответ</div><div class="clear"></div>
+							<ul class="answer-blocks-white mod_cursor">
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop correct_pair">
+								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+								<table>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Окружающая среда</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые </div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											Александр Пушкин 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Лев Толстой
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Алексей Толстой
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Михаил Зеленский
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="6" data-seconds="">
+							<div class="question-block-container">
+								Цитата как бы придвигает к нам прошлое, при этом стих абсурдно отталкивает резкий симулякр и передается в этом стихотворении Донна метафорическим образом циркуля.
+							</div>
+							<div class="drag_drop correct_pair">
+								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+								<table>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Окружающая среда</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые </div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											1
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											2
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											3
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											4
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						
+						<div class="question-block-2 test-question">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop">
+								<div class="right-answer-help"><div class="text">Расположите ответы в правильной последовательности</div><div class="icon"></div><div class="clear"></div></div>
+								<div class="clear"></div>
+								<table>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда, в которой существуют живые существа. 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont mod_padding">
+											<div class="img">
+												<img alt="" src="img/pic_1.jpg" />
+											</div>
+											Психосоматика притягивает конвергентный интеллект.
+											<div class="clear"></div>												
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Французские слова и выражения, которые проникают организмы
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+								</div>
+								
+								<div class="clear"></div>
+							</div>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+							
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="right-answer-caption">Выберите правильный ответ</div><div class="clear"></div>
+							<ul class="answer-blocks-white mod_cursor">
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop correct_pair">
+								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+								<table>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Окружающая среда</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые </div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											Александр Пушкин 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Лев Толстой
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Алексей Толстой
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Михаил Зеленский
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="6" data-seconds="">
+							<div class="question-block-container">
+								Цитата как бы придвигает к нам прошлое, при этом стих абсурдно отталкивает резкий симулякр и передается в этом стихотворении Донна метафорическим образом циркуля.
+							</div>
+							<div class="drag_drop correct_pair">
+								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+								<table>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Окружающая среда</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые </div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											1
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											2
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											3
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											4
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						
+						<div class="question-block-2 test-question">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop">
+								<div class="right-answer-help"><div class="text">Расположите ответы в правильной последовательности</div><div class="icon"></div><div class="clear"></div></div>
+								<div class="clear"></div>
+								<table>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда, в которой существуют живые существа. 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont mod_padding">
+											<div class="img">
+												<img alt="" src="img/pic_1.jpg" />
+											</div>
+											Психосоматика притягивает конвергентный интеллект.
+											<div class="clear"></div>												
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Французские слова и выражения, которые проникают организмы
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+								</div>
+								
+								<div class="clear"></div>
+							</div>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+							
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="right-answer-caption">Выберите правильный ответ</div><div class="clear"></div>
+							<ul class="answer-blocks-white mod_cursor">
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop correct_pair">
+								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+								<table>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Окружающая среда</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые </div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											Александр Пушкин 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Лев Толстой
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Алексей Толстой
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Михаил Зеленский
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="6" data-seconds="">
+							<div class="question-block-container">
+								Цитата как бы придвигает к нам прошлое, при этом стих абсурдно отталкивает резкий симулякр и передается в этом стихотворении Донна метафорическим образом циркуля.
+							</div>
+							<div class="drag_drop correct_pair">
+								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+								<table>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Окружающая среда</div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td>
+											<div class="pair">
+												<div class="pair_cont">Французские слова и выражения, которые </div>
+											</div>
+										</td>
+										<td class="line"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											1
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											2
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											3
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											4
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<div class="clear"></div>
+							</div>
+						</div>
+						
+						
+						<div class="question-block-2 test-question">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="drag_drop">
+								<div class="right-answer-help"><div class="text">Расположите ответы в правильной последовательности</div><div class="icon"></div><div class="clear"></div></div>
+								<div class="clear"></div>
+								<table>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+									<tr>
+										<td class="num"></td>
+										<td><div class="get"></div></td>
+									</tr>
+								</table>
+								
+								<div class="drag_elements">
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда, в которой существуют живые существа. 
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont mod_padding">
+											<div class="img">
+												<img alt="" src="img/pic_1.jpg" />
+											</div>
+											Психосоматика притягивает конвергентный интеллект.
+											<div class="clear"></div>												
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Французские слова и выражения, которые проникают организмы
+										</div>
+									</div>
+									<div class="drag">
+										<div class="drag_cont">
+											Окружающая среда
+										</div>
+									</div>
+									<div class="shadow">
+										<div class="shadow_top"></div>
+										<div class="shadow_center"></div>
+										<div class="shadow_bottom"></div>
+									</div>
+								</div>
+								
+								<div class="clear"></div>
+							</div>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+							
+						</div>
+						
+						<div class="question-block-2 test-question" data-minutes="10" data-seconds="">
+							<div class="question-block-container">
+								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
+							</div>
+							<div class="right-answer-caption">Выберите правильный ответ</div><div class="clear"></div>
+							<ul class="answer-blocks-white mod_cursor">
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="picture"><img src="img/pic_1.jpg" alt=""/></div>
+											<div class="min_text">Психосоматика притягивает конвергентный интеллект.</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="bg mod_padding">
+										<div class="checkbox"></div>
+										<div class="text_cont">
+											<div class="min_text">Окружающая среда, в которой существуют живые </div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="timer">
+				<div class="timer-block">
+					<div class="timer-block-cont">
+						<p>осталось времени</p>
+						<p class="time">00:31</p>
+						<p class="general-time">общее время <span>63</span> мин.</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+    </div>
+</div>
+
+</body>
+</html>
