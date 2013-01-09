@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f65801-e7a1-4792-a180-89750c9de19e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\.idea\tb_test.iml" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\.idea\workspace.xml" afterPath="" />
     </list>
     <ignored path="tb_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,7 +141,11 @@
       <created>1357737874672</created>
       <updated>1357737874672</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="git">
+      <created>1357738189142</created>
+      <updated>1357738189142</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -197,7 +207,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="git" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -211,6 +221,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="start" />
+    <MESSAGE value="git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
