@@ -109,17 +109,19 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	margin:0 auto;
 }
 
+/*change*/
 .content-container .middle-col.taking-test {
-	margin:0 60px;
+	margin:0 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
-
+/*change*/
 .content-container .middle-col.taking-test .main_cont {
-	width:840px;
+	width:900px;
 	position:relative;
 }
-
+/*change*/
 .content-container .middle-col.taking-test .scroll-block {
-	width:695px;
+	width:735px;
 }
 
 .content-container .middle-col .timer {
@@ -139,18 +141,27 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	text-align:center;
 	padding:6px 0 0;
 }
-
+/*change*/
 .content-container .middle-col .timer p {
-	font-size:13px;
+	font-size:12px;
+    color: #6a8aae;
 }
 
 .content-container .middle-col .timer .general-time {
 	color:#73767a;
 }
+/*add*/
+.content-container .middle-col .timer .general-time span {
+    font-weight: bold;
+}
 
+/*change*/
 .content-container .middle-col .timer .time {
 	font-size:35px;
 	margin:5px 0 0;
+    color: #000;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .content-container .middle-col .ask-question-btn {
@@ -171,36 +182,62 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	display:block;
 }
 
-
+/*change*/
 .test-next-btn {
 	height:100px;
 	width:52px;
-	min-width:60px;
+	min-width:40px;
 	max-width:146px;
 	float:right;
-	background:blue;
-	background:url(img/taking_test_next_btn.png) center no-repeat;
+	/*background:blue;*/
+	/*background:url(img/taking_test_next_btn.png) center no-repeat;*/
 	cursor:pointer;
-	margin-right:26px;
-	margin-top:20px;
+	margin-right:0;
+	margin-top:0;
+    position: relative;
+}
+/*add*/
+.test-next-btn span, .test-prev-btn span {
+    position: absolute;
+    top:50%;
+    display: block;
+    left: 50%;
+    margin: -16px 0 0 -16px;
+    width: 32px;
+    height: 32px;
+    background:url(img/taking_test_next_btn.png) center no-repeat;
 }
 
+.test-prev-btn span {
+    background:url(img/taking_test_prev_btn.png) center no-repeat;
+}
+
+/*change*/
 .test-next-btn:hover,
 .test-prev-btn:hover {
-	background-color:#e8ebf2;
-}
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UwZTVmMSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjZTBlNWYxIiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNlMGU1ZjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI5NSUiIHN0b3AtY29sb3I9IiNlMGU1ZjEiIHN0b3Atb3BhY2l0eT0iMC4xIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMGU1ZjEiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(224, 229, 241, 0) 0%, rgba(224, 229, 241, 0.1) 5%, rgba(224, 229, 241, 1) 50%, rgba(224, 229, 241, 0.1) 95%, rgba(224, 229, 241, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(224, 229, 241, 0)), color-stop(5%, rgba(224, 229, 241, 0.1)), color-stop(50%, rgba(224, 229, 241, 1)), color-stop(95%, rgba(224, 229, 241, 0.1)), color-stop(100%, rgba(224, 229, 241, 0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(224, 229, 241, 0) 0%, rgba(224, 229, 241, 0.1) 5%, rgba(224, 229, 241, 1) 50%, rgba(224, 229, 241, 0.1) 95%, rgba(224, 229, 241, 0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(224, 229, 241, 0) 0%, rgba(224, 229, 241, 0.1) 5%, rgba(224, 229, 241, 1) 50%, rgba(224, 229, 241, 0.1) 95%, rgba(224, 229, 241, 0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(224, 229, 241, 0) 0%, rgba(224, 229, 241, 0.1) 5%, rgba(224, 229, 241, 1) 50%, rgba(224, 229, 241, 0.1) 95%, rgba(224, 229, 241, 0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(224, 229, 241, 0) 0%, rgba(224, 229, 241, 0.1) 5%, rgba(224, 229, 241, 1) 50%, rgba(224, 229, 241, 0.1) 95%, rgba(224, 229, 241, 0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#00e0e5f1', endColorstr = '#00e0e5f1', GradientType = 0); /* IE6-8 */
 
+}
+/*change*/
 .test-prev-btn {
 	height:100px;
 	width:52px;
-	min-width:60px;
+	min-width:40px;
 	max-width:146px;
 	float:left;
-	background:blue;
-	background:url(img/taking_test_prev_btn.png) center no-repeat;
+	/*background:blue;*/
+	/*background:url(img/taking_test_prev_btn.png) center no-repeat;*/
 	cursor:pointer;
-	margin-left:26px;
-	margin-top:20px;
+	margin-left:0;
+    position: relative;
+	margin-top:0;
 }
 
 .question-counter {
@@ -213,12 +250,13 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	float:left;
 }
 
+/*change*/
 .question-counter-text a {
 	text-decoration:none;
 	border-bottom:1px dashed #acacaf;
 	color:#000;
 	font-size:16px;
-	font-family:PTSansBold;
+    font-weight: bold;
 	padding:0;
 }
 
@@ -281,7 +319,15 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 
 .content-container { background:#f6f6fb; }
 .content-container .left-col { width:74px; float:left; }
-.content-container .general { width:675px; float:left; }
+
+
+/*change*/
+.content-container .general { 
+    width:735px; 
+    float:left;
+}
+
+
 .content-container .right-col { width:210px; float:right; background:url(img/right-col-bg.png) left top repeat-y #e9e9fc; border-right:1px solid #ddddec; padding:0; position:relative; }
 .content-container .right-col .questions-points-num { position:absolute; bottom:30px; left:19px; background:#a3a3b0;  width:170px; height:20px; line-height:20px; font-size:12px; color:#fff; text-align:center; font-family: 'PTSansBold'; behavior: url(js/PIE.htc); border-radius:4px 4px 4px 4px; }
 .content-container .middle-col { margin:0 215px 0 0; padding:0; }
@@ -311,10 +357,11 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 .question-block .field-name { margin-left:12px; color:#78787a; }
 
 /* question block 2 */
+/*change*/
 .question-block-2 .question-block-container {
 	background:url(img/question_block_2_bg.jpg) repeat-x #F2F2FD;
 	border:1px solid #e3e3e6;
-	padding:16px 20px 12px 16px;
+	padding:16px 20px 16px 16px;
 	font-size:18px;
 	line-height:20px;
 	border-radius:2px;
@@ -498,19 +545,21 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 /* --end-- answer blocks white */
 
 /* blue button */
+/*change*/
 .blue_btn {
 	text-decoration:none;
 	padding:3px 21px 2px;
 	border:1px solid #505885;
 	background:url(img/blue_btn_bg.jpg) repeat-x #5187C5;
-	font-size:14px;
+	font-size:13px;
 	color:#FFF;
+    font-weight: bold;
 	border-radius:2px;
 	box-shadow:0px 2px 2px #d1d1d6;
-	text-shadow: #38597c 1px 1px 2px;
+	text-shadow: #38597c 1px 1px 0px;
 	behavior: url(js/PIE.htc);
 	position:relative;
-	font-family:"PTSansBold";
+	font-family:Helvetica, Arial, sans-serif;
 	margin:45px 0 0;
 	display:block;
 	float:left;
@@ -774,10 +823,18 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	margin-top:3px;
 }
 
+/*change*/
 .right-answer-help .text {
 	float:left;
-	color:#78787a;
-	font-size:15px;
+	color:#49494b;
+	font-size:14px;
+}
+
+/*add*/
+.right-answer-help img {
+    position: relative;
+    top:4px;
+    margin-left: 5px;
 }
 
 .right-answer-help .icon {
@@ -1095,9 +1152,9 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	padding-right:9px;
 	padding-top:10px;
 }
-
+/*change*/
 .drag_drop table .get {
-	width:300px;
+	width:325px;
 	min-height:47px;
 	background:url(img/drop_get_bg.png) no-repeat;
 }
@@ -1130,10 +1187,11 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	margin:0;
 }
 
+/*change*/
 .drag_drop .drag .drag_cont {
 	line-height:16px;
 	padding:16px 14px 10px;
-	font-size:14px;
+	font-size:12px;
 	background: url("img/question_answer_bg.jpg") repeat-x scroll 0 0 #F7F6FB;
 	border: 1px solid #BCBCBD;
 	border-radius: 2px 2px 2px 2px;
@@ -1163,30 +1221,33 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 .drag_drop .drag .drag_cont .img img {
 	display:block;
 }
-
+/*change*/
 .drag_drop .shadow {
 	position:absolute;
 	left:0;
 	top:0;
-	width:300px;
+	width:317px;
 	display:none;
+    background: #e5e5e5;
+    box-shadow: 0 0 4px 4px #e5e5e5;
+    top: 4px;
 }
-
+/*change*/
 .drag_drop .shadow .shadow_top {
-	width:300px;
-	height:11px;
-	background:url(img/drop_shadow.png) no-repeat;
+	/*width:325px;*/
+	/*height:11px;*/
+	/*background:url(img/drop_shadow.png) no-repeat;*/
 }
-
+/*change*/
 .drag_drop .shadow .shadow_bottom {
-	width:300px;
-	height:11px;
-	background:url(img/drop_shadow.png) no-repeat -602px 0;
+	/*width:300px;*/
+	/*height:11px;*/
+	/*background:url(img/drop_shadow.png) no-repeat -602px 0;*/
 }
-
+/*change*/
 .drag_drop .shadow .shadow_center {
-	width:300px;
-	background:url(img/drop_shadow.png) repeat-y -301px;
+	/*width:300px;*/
+	/*background:url(img/drop_shadow.png) repeat-y -301px;*/
 }
 
 /* CORRECT PAIR */
@@ -1205,6 +1266,15 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	float:none;
 }
 
+/*add*/
+.drag_drop.correct_pair .right-answer-help .text {
+    float:left;
+}
+/*add*/
+.drag_drop.correct_pair .right-answer-help {
+    overflow: auto;
+}
+
 .drag_drop.correct_pair table {
 	margin-left:-2px;
 	
@@ -1219,13 +1289,14 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	width:77px;
 }
 
+/*change*/
 .drag_drop .pair {
 	margin:0;
 	position: relative;
 	margin:0 0 5px;
 	z-index:10;
 	zoom:1;
-	width:300px;
+	width:325px;
 }
 
 .drag_drop .pair .pair_cont.mod_padding {
@@ -1240,10 +1311,11 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	margin:0;
 }
 
+/*change*/
 .drag_drop .pair .pair_cont {
 	line-height:16px;
 	padding:16px 14px 10px;
-	font-size:14px;
+	font-size:12px;
 	background: url("img/question_answer_bg.jpg") repeat-x scroll 0 0 #F7F6FB;
 	border: 1px solid #BCBCBD;
 	border-radius: 2px 2px 2px 2px;
@@ -1261,9 +1333,9 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	width:auto;
 	margin:20px 0 0;
 }
-
+/*change*/
 .drag_drop.correct_pair .drag_elements .drag {
-	width:300px;
+	width:325px;
 	float:left;
 	margin-right:6px;
 }

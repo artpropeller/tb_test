@@ -1,7 +1,7 @@
-// прохождение теста
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
 $(document).ready(function(){
-	// Прячем, показываем скролл
+	// пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	var t;
 	$(".middle-col").bind('mousemove',function(e){ 
 		
@@ -27,13 +27,13 @@ $(document).ready(function(){
 	});
 	
 	
-	// Функция отсчета времени
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	startTime();
 	
 	var count_questions = $(".test-question").size();
 	// QUESTION MAP
 	
-	// отступ сверху
+	// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	var q_map_top = $(".question-map").height()/2;
 	$(".question-map").css("margin-top", -q_map_top);
 	
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		$(".fill-bg, .question-map").hide();
 	});
 	
-	// По клику показываем карту вопросов
+	// пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	$(".question-counter-text a").click(function(){
 		$(".fill-bg, .question-map").show();
 	});
@@ -55,7 +55,7 @@ $(document).ready(function(){
 		$(this).addClass("active");
 		
 		$(".question-counter-text a")
-			.attr("title", "Вопрос " + (index+1) + " из " + count_questions)
+			.attr("title", "пїЅпїЅпїЅпїЅпїЅпїЅ " + (index+1) + " пїЅпїЅ " + count_questions)
 			.find("span")
 			.text(index+1);
 			
@@ -67,10 +67,10 @@ $(document).ready(function(){
 	});
 	// --END-- QUESTION MAP
 	
-	// Переход между вопросами теста
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	isSetTime($(".test-question.active"));
 	
-	// кнопка предыдущий вопрос
+	// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	$(".test-prev-btn").click(function(){
 		var index = $(".test-question.active").index();
 		
@@ -83,7 +83,7 @@ $(document).ready(function(){
 			$(".test-question").eq(index-1).addClass("active");
 			
 			$(".question-counter-text a")
-				.attr("title", "Вопрос " + (index) + " из " + count_questions)
+				.attr("title", "пїЅпїЅпїЅпїЅпїЅпїЅ " + (index) + " пїЅпїЅ " + count_questions)
 				.find("span")
 				.text(index);
 			
@@ -94,7 +94,7 @@ $(document).ready(function(){
 		}
 	}).mousedown(function(){ return false; });
 	
-	// кнопка следующий вопрос
+	// пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 	$(".test-next-btn").click(function(){
 		var index = $(".test-question.active").index() + 1;
 		
@@ -107,7 +107,7 @@ $(document).ready(function(){
 			$(".test-question").eq(index).addClass("active");
 			
 			$(".question-counter-text a")
-				.attr("title", "Вопрос " + (index+1) + " из " + count_questions)
+				.attr("title", "пїЅпїЅпїЅпїЅпїЅпїЅ " + (index+1) + " пїЅпїЅ " + count_questions)
 				.find("span")
 				.text(index+1);
 			
@@ -134,7 +134,7 @@ function hideScroll()
 		$(".middle-col .jspVerticalBar").fadeOut(500);
 	}
 }
-
+//change
 function resizeContentContainerTest()
 {
 	var wh = $(window).height();
@@ -143,24 +143,24 @@ function resizeContentContainerTest()
 	var new_h = max_h - $('.head').height() - 4;
 	
 	var window_width = $(window).width();
-	var width_arrows = ($(window).width() - 860)/2 - 10;
-	if (window_width < 1210)
-	{
-		$(".test-prev-btn").css("margin-left", 0);
-		$(".test-next-btn").css("margin-right", 0);
-	}
-	else
-	{
-		$(".test-prev-btn").css("margin-left", 26);
-		$(".test-next-btn").css("margin-right", 26);
-	}
+	var width_arrows = ($(window).width() - 900)/2 - 10;
+//	if (window_width < 1210)
+//	{
+//		$(".test-prev-btn").css("margin-left", 0);
+//		$(".test-next-btn").css("margin-right", 0);
+//	}
+//	else
+//	{
+//		$(".test-prev-btn").css("margin-left", 26);
+//		$(".test-next-btn").css("margin-right", 26);
+//	}
 	$(".test-prev-btn, .test-next-btn").width(width_arrows);
 	
-	$('.test-next-btn, .test-prev-btn').height(new_h-40);	
-	$('.content-container, .content-container .middle-col .column-content').height(new_h-50);	
+	$('.test-next-btn, .test-prev-btn').height(new_h-5);
+	$('.content-container, .content-container .middle-col .column-content').height(new_h-5);
 }
 
-// Если в атрибуте элемента указано время
+// пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 function isSetTime(element)
 {
 	minutes = element.attr("data-minutes");
@@ -190,12 +190,14 @@ function isSetTime(element)
 	startTime();
 }
 
-// Функция отсчета времени
+// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 var minutes, seconds;
-var general_minutes = 0;
-var general_seconds = 0;
+var general_minutes = 190;
+var general_seconds = general_minutes * 60;
 var only_general = false;
 var t;
+
+//change
 function startTime() {
 	if (!only_general)
 	{
@@ -225,18 +227,23 @@ function startTime() {
 	if (minutes == "00" && seconds == "00" && !only_general)
 		only_general = true;
 	
-	// общее время
-	general_seconds++;
+	// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
+
 	
 	general_minutes = parseInt(general_minutes);
 	if (general_seconds == 60)
 	{
 		general_minutes++;
-		general_seconds = 0;
+//		general_seconds = 0;
 	}
 	
 	//if (general_minutes < 10) general_minutes = "0" + general_minutes;
-	$(".timer .general-time span").text(general_minutes);
-	
+    var h = general_seconds / 3600 | 0;
+    var m = ((general_seconds - h * 3600) / 60) | 0;
+    var s = general_seconds - h * 3600 - m * 60;
+    m = m < 10 ? '0' + m : m;
+    s = s < 10 ? '0' + s : s;
+	$(".timer .general-time span").text(h+':'+m+':'+s);
+    general_seconds--;
 	t = setTimeout(startTime, 1000);
 }

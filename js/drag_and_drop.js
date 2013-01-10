@@ -44,9 +44,12 @@ $(document).ready(function(){
 			$(this).addClass("active");
 			if (drag_parent.is(".drag_elements"))
 			{
-				var top = $(this).position().top;
-				var left = $(this).position().left;
-				var height = $(this).height() - 20;
+                //change
+				var top = $(this).position().top + 4;
+				var left = $(this).position().left+4;
+				var height = $(this).height() - 8;
+
+
 				drag_parent.find(".shadow").css({"top": top, "height": height, "left": left});
 				drag_parent.find(".shadow .shadow_center").css({"height": height});
 				drag_parent.find(".shadow").show();

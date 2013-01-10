@@ -2,7 +2,7 @@ syntax: glob
 
 *.DS_Store
 *~
-idea*
+
 
 syntax: regexp
 

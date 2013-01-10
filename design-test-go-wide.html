@@ -80,8 +80,10 @@ $().ready(function(){
 	<div class="test-buttons"><a href="#" class="top-help-button"></a>  <a href="#" class="top-logout-button"></a></div><!--back--> 
 </div>
 <div class="content-container">
-	<div class="test-next-btn"></div>
-	<div class="test-prev-btn"></div>
+    <!--change begin-->
+	<div class="test-next-btn"><span></span></div>
+	<div class="test-prev-btn"><span></span></div>
+    <!--change end-->
     <div class="middle-col taking-test">
 		<div class="main_cont">
 			<div class="question-counter">
@@ -104,7 +106,14 @@ $().ready(function(){
 								В каком предложении придаточную часть сложноподчинённого предложения заменить обособленным определением, выраженным причастным оборотом или предложением?
 							</div>
 							<div class="drag_drop correct_pair">
-								<div class="right-answer-help"><div class="text">Сопоставьте правильные пары</div></div>
+
+                                <!--change-->
+								<div class="right-answer-help">
+                                    <div class="text">Сопоставьте правильные пары</div>
+                                    <a href="#"><img src="img/icon_help.png" alt=""></a>
+                                </div>
+
+
 								<table>
 									<tr>
 										<td>
@@ -163,7 +172,7 @@ $().ready(function(){
 									</div>
 									<div class="clear"></div>
 								</div>
-								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Следующий вопрос</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
+								<a href="javascript:void(0)" class="blue_btn" title="Следующий вопрос">Ответить</a><a href="#" title="Задать вопрос" class="ask-question-btn"></a>
 								<div class="clear"></div>
 							</div>
 						</div>
@@ -1498,7 +1507,9 @@ $().ready(function(){
 					<div class="timer-block-cont">
 						<p>осталось времени</p>
 						<p class="time">00:31</p>
-						<p class="general-time">общее время <span>63</span> мин.</p>
+
+                        <!--change-->
+						<p class="general-time">всего на тест <span>63</span></p>
 					</div>
 				</div>
 				
