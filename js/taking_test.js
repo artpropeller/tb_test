@@ -157,7 +157,8 @@ function resizeContentContainerTest()
 	$(".test-prev-btn, .test-next-btn").width(width_arrows);
 	
 	$('.test-next-btn, .test-prev-btn').height(new_h-5);
-	$('.content-container, .content-container .middle-col .column-content').height(new_h-5);
+	$('.content-container').height(new_h-5);
+	$('.content-container .middle-col .column-content').css('min-height', (new_h-80) + 'px');
 }
 
 // ���� � �������� �������� ������� �����

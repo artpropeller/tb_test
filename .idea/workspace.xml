@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86f65801-e7a1-4792-a180-89750c9de19e" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\workspere\markup\tb_test\js\.hgignore" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/drop_get_bg.png" afterPath="$PROJECT_DIR$/img/drop_get_bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/drop_get_bg_active.png" afterPath="$PROJECT_DIR$/img/drop_get_bg_active.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-test-go-wide.html" afterPath="$PROJECT_DIR$/design-test-go-wide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/drag_and_drop.js" afterPath="$PROJECT_DIR$/js/drag_and_drop.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/taking_test.js" afterPath="$PROJECT_DIR$/js/taking_test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
     <ignored path="tb_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +27,7 @@
       <file leaf-file-name="design-test-go-wide.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design-test-go-wide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1511" column="46" selection-start="52632" selection-end="52644" vertical-scroll-proportion="-7.8076925">
+            <state line="81" column="29" selection-start="2856" selection-end="2873" vertical-scroll-proportion="-3.0784314">
               <folding>
                 <element signature="tag#div#1;tag#div#0;tag#div#2;tag#div#3;tag#body#0;tag#html#0" expanded="false" />
               </folding>
@@ -76,7 +70,16 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.19825073">
+            <state line="4" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.1271028">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fabfile.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fabfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,7 +88,7 @@
       <file leaf-file-name="taking_test.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/taking_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="22" selection-start="5160" selection-end="5160" vertical-scroll-proportion="-5.44">
+            <state line="149" column="51" selection-start="3787" selection-end="3787" vertical-scroll-proportion="-4.08">
               <folding />
             </state>
           </provider>
@@ -113,9 +116,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/design-test-go-wide.html" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/js/drag_and_drop.js" />
+        <option value="$PROJECT_DIR$/fabfile.py" />
+        <option value="$PROJECT_DIR$/design-test-go-wide.html" />
         <option value="$PROJECT_DIR$/js/taking_test.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
@@ -200,6 +204,13 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -221,14 +232,18 @@
       <created>1357738303466</created>
       <updated>1357738303466</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="git">
+      <created>1357805606983</created>
+      <updated>1357805606983</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -348,15 +363,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design-test-go-wide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1511" column="46" selection-start="52632" selection-end="52644" vertical-scroll-proportion="-7.8076925">
-          <folding>
-            <element signature="tag#div#1;tag#div#0;tag#div#2;tag#div#3;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="152" column="5" selection-start="4522" selection-end="4522" vertical-scroll-proportion="-6.8">
@@ -373,16 +379,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fabfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design-test-go-wide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="29" selection-start="2856" selection-end="2873" vertical-scroll-proportion="-3.0784314">
+          <folding>
+            <element signature="tag#div#1;tag#div#0;tag#div#2;tag#div#3;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/taking_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="22" selection-start="5160" selection-end="5160" vertical-scroll-proportion="-5.44">
+        <state line="149" column="51" selection-start="3787" selection-end="3787" vertical-scroll-proportion="-4.08">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.19825073">
+        <state line="4" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.1271028">
           <folding />
         </state>
       </provider>
