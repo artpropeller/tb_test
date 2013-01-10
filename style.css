@@ -125,6 +125,8 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 .content-container .middle-col.taking-test {
 	margin:0 0;
     font-family: Helvetica, Arial, sans-serif;
+    overflow-y: auto;
+    padding-top: 50px;
     /*overflow-y: auto;*/
     /*z-index: 10;*/
     /*position: relative;*/
@@ -138,18 +140,29 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 .content-container .middle-col.taking-test .scroll-block {
 	width:735px;
 }
+/*add*/
+.content-container .middle-col .fixtime {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
+
+}
+/*change*/
 .content-container .middle-col .timer {
 	width:140px;
-	right:0;
-	position:absolute;
+	/*right:0;*/
+    position: relative;
 	height:100%;
-	top:0;
+	top:100px;
+    margin: 0 auto;
+    left: 380px;
 }
-
+/*change*/
 .content-container .middle-col .timer .timer-block {
 	background:#e7edf4;
-	margin:51px 0 0;
+	margin:0 0 0;
 }
 
 .content-container .middle-col .timer .timer-block-cont {
@@ -257,10 +270,16 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
     position: fixed;
 	margin-top:0;
 }
-
+/*cange*/
 .question-counter {
 	height:50px;
 	margin:5px 0 0 0;
+    position: fixed;
+    background: #F6F6FB;
+    top: 43px;
+    width: 900px;
+    z-index: 10;
+    
 }
 
 .question-counter-text {
@@ -336,7 +355,7 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 .head .top-logout-button { float:left; display:block; width:88px; height:32px; background:url(img/logout_btn.png) 0px 0px no-repeat; position:relative; margin-left:2px; }
 
 /*change*/
-.content-container { background:#f6f6fb; overflow-y: auto; }
+.content-container { background:#f6f6fb;  }
 .content-container .left-col { width:74px; float:left; }
 
 

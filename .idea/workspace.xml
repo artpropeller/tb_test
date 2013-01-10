@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="86f65801-e7a1-4792-a180-89750c9de19e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-test-go-wide.html" afterPath="$PROJECT_DIR$/design-test-go-wide.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/taking_test.js" afterPath="$PROJECT_DIR$/js/taking_test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
@@ -27,7 +28,7 @@
       <file leaf-file-name="design-test-go-wide.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design-test-go-wide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="6" selection-start="1659" selection-end="1659" vertical-scroll-proportion="-3.2692308">
+            <state line="1518" column="18" selection-start="52827" selection-end="52827" vertical-scroll-proportion="-17.115385">
               <folding />
             </state>
           </provider>
@@ -37,15 +38,6 @@
         <entry file="file://$PROJECT_DIR$/img/drop_get_bg_active.png">
           <provider selected="true" editor-type-id="images">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="0" selection-start="3788" selection-end="3788" vertical-scroll-proportion="-6.6">
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -84,7 +76,7 @@
       <file leaf-file-name="taking_test.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/taking_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="36" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.33271027">
+            <state line="160" column="49" selection-start="4110" selection-end="4110" vertical-scroll-proportion="0.3420523">
               <folding />
             </state>
           </provider>
@@ -252,7 +244,11 @@
       <created>1357823517066</created>
       <updated>1357823517066</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="git">
+      <created>1357824984882</created>
+      <updated>1357824984882</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -386,11 +382,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/drop_get_bg_active.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/drop_shadow.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -419,21 +410,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/design-test-go-wide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="6" selection-start="1659" selection-end="1659" vertical-scroll-proportion="-3.2692308">
+        <state line="1518" column="18" selection-start="52827" selection-end="52827" vertical-scroll-proportion="-17.115385">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="0" selection-start="3788" selection-end="3788" vertical-scroll-proportion="-6.6">
+        <state line="124" column="0" selection-start="3788" selection-end="3788" vertical-scroll-proportion="0.33199194">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/drop_get_bg_active.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/taking_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="36" selection-start="4001" selection-end="4001" vertical-scroll-proportion="0.33271027">
+        <state line="160" column="49" selection-start="4110" selection-end="4110" vertical-scroll-proportion="0.3420523">
           <folding />
         </state>
       </provider>
