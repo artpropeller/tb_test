@@ -125,6 +125,9 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 .content-container .middle-col.taking-test {
 	margin:0 0;
     font-family: Helvetica, Arial, sans-serif;
+    /*overflow-y: auto;*/
+    /*z-index: 10;*/
+    /*position: relative;*/
 }
 /*change*/
 .content-container .middle-col.taking-test .main_cont {
@@ -200,13 +203,15 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	width:52px;
 	min-width:40px;
 	max-width:146px;
-	float:right;
+    /*float:right;*/
 	/*background:blue;*/
+    right: 17px;
 	/*background:url(img/taking_test_next_btn.png) center no-repeat;*/
 	cursor:pointer;
 	margin-right:0;
 	margin-top:0;
-    position: relative;
+    /*z-index: 11;*/
+    position: fixed;
 }
 /*add*/
 .test-next-btn span, .test-prev-btn span {
@@ -243,12 +248,13 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	width:52px;
 	min-width:40px;
 	max-width:146px;
-	float:left;
+    left: 0;
+	/*float:left;*/
 	/*background:blue;*/
 	/*background:url(img/taking_test_prev_btn.png) center no-repeat;*/
 	cursor:pointer;
 	margin-left:0;
-    position: relative;
+    position: fixed;
 	margin-top:0;
 }
 
@@ -329,7 +335,8 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 .head .top-help-button { float:left; display:block; width:93px; height:32px; background:url(img/help_btn.png) 0px 0px no-repeat; position:relative; }
 .head .top-logout-button { float:left; display:block; width:88px; height:32px; background:url(img/logout_btn.png) 0px 0px no-repeat; position:relative; margin-left:2px; }
 
-.content-container { background:#f6f6fb; }
+/*change*/
+.content-container { background:#f6f6fb; overflow-y: auto; }
 .content-container .left-col { width:74px; float:left; }
 
 
