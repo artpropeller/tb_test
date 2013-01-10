@@ -19,24 +19,24 @@ $().ready(function(){
 	
 	$(window).load(function(){
 		resizeContentContainerTest();
-		var tt;
-		$('.middle-col .column-content').bind(
-				'jsp-scroll-y',
-				function(event, scrollPositionY, isAtTop, isAtBottom)
-				{
-					clearTimeout(tt);
-					$(".middle-col .column-content .jspVerticalBar").fadeIn(500);
-					tt=setTimeout(hideScroll,2000);
-				}
-			).jScrollPane();
-		api_middle_content = $('.middle-col .column-content').data('jsp');
-		api_middle_content.reinitialise();
+//		var tt;
+//		$('.middle-col .column-content').bind(
+//				'jsp-scroll-y',
+//				function(event, scrollPositionY, isAtTop, isAtBottom)
+//				{
+//					clearTimeout(tt);
+//					$(".middle-col .column-content .jspVerticalBar").fadeIn(500);
+//					tt=setTimeout(hideScroll,2000);
+//				}
+//			).jScrollPane();
+//		api_middle_content = $('.middle-col .column-content').data('jsp');
+//		api_middle_content.reinitialise();
 		//resizeContentContainerTest();
 	});
-	
+
 	$(window).resize(function(){
 		resizeContentContainerTest();
-		api_middle_content.reinitialise();
+//		api_middle_content.reinitialise();
 	})
 });
 </script>
