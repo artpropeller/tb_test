@@ -359,7 +359,7 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 
 .content-container .middle-col .column-content { padding:17px 0 0 0; }
 /*change*/
-.content-container .taking-test .column-content { padding:0; overflow-y: auto; overflow-x: hidden; }
+.content-container .taking-test .column-content { padding:0;}
 .content-container .middle-col .preview  .column-content { padding:25px 56px 0 0; }
 .content-container .right-col .column-content { padding:0 0 0 0; }
 .content-container .left-col .scroll-block, .content-container .middle-col .scroll-block, .content-container .right-col .scroll-block { overflow:auto; outline:none; }

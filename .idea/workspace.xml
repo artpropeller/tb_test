@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="86f65801-e7a1-4792-a180-89750c9de19e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design-test-go-wide.html" afterPath="$PROJECT_DIR$/design-test-go-wide.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/taking_test.js" afterPath="$PROJECT_DIR$/js/taking_test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
     </list>
@@ -28,7 +27,7 @@
       <file leaf-file-name="design-test-go-wide.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design-test-go-wide.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="6" selection-start="1630" selection-end="1630" vertical-scroll-proportion="-7.745098">
+            <state line="39" column="6" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -44,7 +43,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="361" column="8" selection-start="13944" selection-end="13944" vertical-scroll-proportion="-7.28">
+            <state line="361" column="60" selection-start="13996" selection-end="13996" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -85,7 +84,7 @@
       <file leaf-file-name="taking_test.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/taking_test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="77" selection-start="4138" selection-end="4138" vertical-scroll-proportion="0.3813084">
+            <state line="160" column="1" selection-start="4065" selection-end="4065" vertical-scroll-proportion="0.23738317">
               <folding />
             </state>
           </provider>
@@ -245,7 +244,11 @@
       <created>1357817593118</created>
       <updated>1357817593118</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="git">
+      <created>1357822271332</created>
+      <updated>1357822271332</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -256,7 +259,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26136363" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2659091" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -412,21 +415,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/design-test-go-wide.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="6" selection-start="1630" selection-end="1630" vertical-scroll-proportion="-7.745098">
+        <state line="39" column="6" selection-start="1630" selection-end="1630" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="361" column="8" selection-start="13944" selection-end="13944" vertical-scroll-proportion="-7.28">
+        <state line="361" column="60" selection-start="13996" selection-end="13996" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/taking_test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="77" selection-start="4138" selection-end="4138" vertical-scroll-proportion="0.3813084">
+        <state line="160" column="1" selection-start="4065" selection-end="4065" vertical-scroll-proportion="0.23738317">
           <folding />
         </state>
       </provider>

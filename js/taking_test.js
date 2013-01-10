@@ -158,7 +158,6 @@ function resizeContentContainerTest()
 	
 	$('.test-next-btn, .test-prev-btn').height(new_h-5);
 	$('.content-container').height(new_h-5);
-	$('.content-container .middle-col .column-content').css('height', (new_h-80) + 'px');
 }
 
 // ���� � �������� �������� ������� �����
