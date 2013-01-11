@@ -1385,10 +1385,10 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	margin-top:25px;
 	*margin-top:0;
 }
-
+/*change*/
 .taking-test .blue_btn {
 	margin-top:25px;
-	margin-bottom:25px;
+	margin-bottom:0;
 }
 
 /* --END-- DRAG AND DROP */
