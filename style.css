@@ -276,7 +276,7 @@ textarea, input, select { font-family: 'PTSansRegular'; outline:none; resize:non
 	margin:5px 0 0 0;
     position: fixed;
     background: #F6F6FB;
-    top: 43px;
+    top: 42px;
     width: 900px;
     z-index: 10;
     
